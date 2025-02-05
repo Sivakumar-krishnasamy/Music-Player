@@ -233,7 +233,7 @@ i.fa-step-backward{
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 350px) {
     .player {
         height: auto;
         padding: 20px;
@@ -253,6 +253,6 @@ i.fa-step-backward{
     .playpause-track, 
     .prev-track, 
     .next-track {
-        padding: 10px;
+        padding: 9px;
     }
 }
