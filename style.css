@@ -224,6 +224,13 @@ i.fa-step-backward{
         justify-content: center;
         align-items: center;
     }
+    .repeat-track, 
+    .random-track, 
+    .playpause-track, 
+    .prev-track, 
+    .next-track {
+        padding: 15px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -246,6 +253,6 @@ i.fa-step-backward{
     .playpause-track, 
     .prev-track, 
     .next-track {
-        padding: 15px;
+        padding: 10px;
     }
 }
