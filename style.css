@@ -32,7 +32,8 @@ body{
 .track-art{
     margin: 25px;
     height: 250px;
-    width: 250px;
+    width: 80%;
+    max-width: 250px;
     border: 2px solid #fffafa;
     background-size: cover;
     background-position: center;
@@ -57,6 +58,7 @@ body{
 }
 .buttons{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     margin-top: 30px;
@@ -87,6 +89,8 @@ body{
 }
 .seek-slider,
 .volume-slider{
+    width: 80%;
+    max-width: 300px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -192,4 +196,53 @@ i.fa-step-backward{
 }
 .stroke:nth-child(7){
     animation-delay: 0s;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+        padding: 20px;
+    
+    }
+    .track-name {
+        font-size: 2rem;
+    }
+    .track-artist {
+        font-size: 1.2rem;
+    }
+    .seek-slider 
+     {
+        width: 100%;
+    }
+    .volume-slider{
+        width: 30%;
+    }
+    .buttons{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .player {
+        height: auto;
+        padding: 20px;
+    }
+    .track-art {
+        width: 70%;
+        max-width: 200px;
+    }
+    .volume-slider{
+        width: 30%;
+    }
+    .buttons {
+        flex-direction: row;
+    }
+    .repeat-track, 
+    .random-track, 
+    .playpause-track, 
+    .prev-track, 
+    .next-track {
+        padding: 15px;
+    }
 }
